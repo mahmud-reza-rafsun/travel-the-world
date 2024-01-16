@@ -1,0 +1,139 @@
+/* responsive media query */
+
+@media screen and (max-width: 1078px) {
+    .mid-content{
+        padding: 45px;
+    }
+    .place-media-box-single-layer, 
+    .place-media-box-3-layer, 
+    .place-media-box-2-layer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px) {
+    .navbar{
+        padding: 10px 0;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        color: var(--primary-color);
+    }
+    .navbar .menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background: #111;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 10px 0;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .navbar .logo-sec{
+        width: 60%;
+    }
+    .secound{
+        margin-top: 10px;
+        margin-left: auto;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about-content {
+        width: 100%;
+    }
+    .about-media {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .place-media-box-single-layer, 
+    .place-media-box-3-layer, 
+    .place-media-box-2-layer{
+        flex-direction: column;
+    }
+    .last-img {
+        width: 50%;
+    }
+}   
+@media screen and (max-width: 576px) {
+    .mid-content{
+        padding: 25px;
+    }
+    .navbar .logo-sec{
+        width: 80%;
+    }
+    .navbar .logo-sec img {
+        width: 18%;
+        height: 18%;
+    }
+    .navbar .logo-sec .logo a {
+        font-size: 30px;
+        margin: 1px 0 0 14px;
+    }
+    .banner-content h2 {
+        font-size: 30px;
+    }
+    .banner-content p {
+        font-size: 14px;
+        padding: 17px 0;
+    }
+    .banner-items input {
+        width: 65%;
+        padding: 8px;
+        font-size: 15px;
+        display: block;
+        margin: 10px auto;
+    }
+    .banner-items input:first-child {
+        margin-left: auto;
+    }
+    .secound {
+        width: 71%;
+    }
+    .secound{
+        margin: 0;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about-content {
+        width: 100%;
+    }
+    .about-media img {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .card-single-layer, 
+    .place-media-box-3-layer, 
+    .place-media-box-2-layer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-single-layer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .single-layer{
+        margin-bottom: 10px;
+    }
+    .place-box img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: auto;
+    }
+    
+} 
